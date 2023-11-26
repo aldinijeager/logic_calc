@@ -1,30 +1,19 @@
 #include <stdio.h>
+int numofvar(int x[],int s)
+{
+    int num=0;
+    for(int i=0;x[i]<s;++i)
+    {
+        if(islet(x[i]))
+        {
+            printf("%d let|",x[i])
+        }
+    }
+}
 
 int main()
 {
-    int count=0;
-    char let[4]={'a','a','b','c'};
-    for(int i=0;i<4;++i)
-    {
-        int flag=0;printf("l");
-        for(int j=i;j>=0;--j)
-        {
-            printf("A");
-            if(j!=0)
-            {
-                if(let[j-1]==let[i])
-                    flag++;
-            }
-        }
-        if(flag==0)
-        {
-            count++;
-            printf("C");
-        }
 
-
-    }
-    printf("count is %d",count);
 
 
 }
